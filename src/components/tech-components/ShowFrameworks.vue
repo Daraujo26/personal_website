@@ -1,6 +1,6 @@
 <template>
     <div id="frameworks-div">
-        <h4 id="languages-header">Frameworks</h4> 
+        <h4 id="languages-header">Frameworks</h4>
         <p id="languages-text">Spring Boot: 2 Years</p>
         <div id="spring-boot" class="bar"></div>
         <p id="frameworks-text">Django: 2 Years</p>
@@ -24,67 +24,65 @@
 
 <style>
 #frameworks-div {
-    margin-top: 0%;
-    margin-left: 0%;
-    height: fit-content;
-    float: top;
+    padding: 0 5% 0 0;
+    max-width: 800px;
+    width: 90%;
 }
-#frameworks-text {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: 18px;
-    color: #717378;
-    page-break-after: auto;
-    margin: 0%;
-    text-indent: 15px;
-    height: fit-content;
-    margin: 0;
-}
+
+#frameworks-text,
 #frameworks-header {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: 28px;
-    color: #0faf87;
-    text-indent: 15px;
-    height: fit-content;
-    float: top;
+    margin: 0.5rem 0;
+    text-indent: 0;
+    width: 100%;
 }
+
+#frameworks-header {
+    font-size: 1.5rem;
+    color: #0faf87;
+}
+
 .bar {
-    height: 20px;
+    height: 15px;
     font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 15px;
+    margin: 10px 0;
     border-radius: 5px;
 }
+
 #spring-boot {
-    background-color: red;
+    background-color: lightgreen;
     width: 100%;
 }
+
 #django {
-    background-color: gold;
+    background-color: yellow;
     width: 100%;
 }
+
 #postgresql {
-    background-color: aquamarine;
+    background-color: blue;
     width: 80%;
 }
+
 #vue {
-    background-color: chocolate;
-    width: 65%;
-}
-#react {
-    background-color: blue;
+    background-color: #0faf87;
     width: 50%;
 }
-#angular {
-    background-color: grey;
-    width: 20%;
+
+#react {
+    background-color: lightblue;
+    width: 25%;
 }
+
+#angular {
+    background-color: red;
+    width: 25%;
+}
+
 #flutter {
-    background-color: turquoise;
-    width: 20%;
+    background-color: cadetblue;
+    width: 25%;
 }
 </style>

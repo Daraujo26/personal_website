@@ -1,30 +1,30 @@
 <template>
-  <HomePage v-if="homeVisibility" @leaveHome="showAbout"/>
-  <AboutMe v-if="aboutVisibility"/>
+  <router-view></router-view>
 </template>
 
 <script>
-import HomePage from './components/HomePage.vue'
-import AboutMe from './components/AboutMe.vue';
-
-  export default {
-    name: 'App',
-    components: { HomePage, AboutMe },
-    data () {
-      return {
-        homeVisibility: true,
-        aboutVisibility: false
-      }
-    },
-    methods: {
-      showAbout() {
-        this.homeVisibility = false
-        this.aboutVisibility = true
-      }
-    }
-  }
+export default {
+  name: 'App',
+}
 </script>
 
 <style>
+body {
+  background: #eee;
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+}
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 </style>
