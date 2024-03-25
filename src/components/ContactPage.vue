@@ -14,7 +14,6 @@
             </div>
             <div id="contact-form">
                 <form>
-
                     <div id="form-div" class="card">
                         <h2 id="form-h2">
                             Contact
