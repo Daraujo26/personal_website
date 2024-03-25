@@ -13,7 +13,7 @@
                 </div>
             </div>
             <div id="contact-form">
-                <form>
+                <form @submit.prevent="sendEmail">
                     <div id="form-div" class="card">
                         <h2 id="form-h2">
                             Contact
@@ -21,17 +21,20 @@
                         </h2>
                         <div class="inputs-row">
                             <div class="input">
-                                <input class="input__field" type="text" id="name" placeholder="Name" />
+                                <input class="input__field" type="text" id="name" placeholder="Name"
+                                    v-model="form.name" />
                             </div>
                             <div class="input">
-                                <input class="input__field" type="text" id="email" placeholder="Email" />
+                                <input class="input__field" type="text" id="email" placeholder="Email"
+                                    v-model="form.email" />
                             </div>
                         </div>
                         <div class="input">
-                            <input class="input__field" type="text" id="subject" placeholder="Subject" />
+                            <input class="input__field" type="text" id="subject" placeholder="Subject"
+                                v-model="form.subject" />
                         </div>
                         <div class="input">
-                            <textarea class="input__field" id="message" placeholder="Message..."
+                            <textarea class="input__field" id="message" placeholder="Message..." v-model="form.message"
                                 style="height: 10vh;"></textarea>
                         </div>
                         <div class="button-group">
@@ -51,6 +54,63 @@ import SideBar from './side-bar/SideBar.vue'
 
 export default {
     components: { SideBar },
+    data() {
+        return {
+            // Initialize form data properties
+            form: {
+                name: '',
+                email: '',
+                subject: '',
+                message: '',
+            },
+        };
+    },
+    methods: {
+        sendEmail() {
+            fetch('/contact/submit/', { // Django url endpoint
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    // Include CSRF token if CSRF protection is enabled in Django
+                    'X-CSRFToken': this.getCookie('csrftoken'),
+                },
+                body: JSON.stringify(this.form),
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log(data);
+                    alert("Message sent successfully.");
+                    this.resetForm();
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert("There was a problem with your submission. Please try again.");
+                });
+        },
+        resetForm() {
+            this.form = { name: '', email: '', subject: '', message: '' };
+        },
+        getCookie(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        },
+    }
+
 }
 </script>
 
