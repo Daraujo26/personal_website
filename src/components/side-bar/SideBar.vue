@@ -1,7 +1,7 @@
 <template>
     <div id="hamburger" @click="toggleSidebar">☰</div>
     <div id="side-bar" :class="{ 'v-if-active': isSidebarVisible }">
-        <h1 id="side-bar-header">David Araujo</h1>
+        <h1 id="side-bar-header" @click="showHome">David Araujo</h1>
         <router-link to="/about-me" class="side-bar-buttons">About Me</router-link>
         <router-link to="/projects" class="side-bar-buttons">Projects</router-link>
         <router-link to="/publications" class="side-bar-buttons">Publications</router-link>
@@ -30,6 +30,7 @@
 </template>
 
 <script>
+
 export default {
     data() {
         return {
@@ -40,6 +41,9 @@ export default {
         toggleSidebar() {
             this.isSidebarVisible = !this.isSidebarVisible;
         },
+        showHome() {
+            window.location.href = '/'
+        }
     },
 }
 </script>
@@ -107,6 +111,10 @@ export default {
     font-size: 24px;
     color: #717378;
     text-align: center;
+}
+
+#side-bar-header:hover {
+    cursor: pointer;
 }
 
 .side-bar-buttons {
@@ -207,6 +215,10 @@ export default {
     .icon {
         width: 40px;
         height: 40px;
+    }
+
+    #icons-container {
+        margin-bottom: 16rem;
     }
 }
 

@@ -59,7 +59,7 @@
                                     <p id="projects-text">Site permits user to draw any number from 0-9, and utilizes a
                                         model
                                         which
-                                        was trained on the MNIST dataset to classify which number is being drawn.</p>
+                                        was trained on the MNIST dataset to classify the image.</p>
                                     <p id="projects-text"><strong>Tech: Django, Python, Machine Learning & AI</strong>
                                     </p>
                                 </div>
