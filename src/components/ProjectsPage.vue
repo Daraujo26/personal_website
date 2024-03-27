@@ -67,7 +67,7 @@
                         </div>
                     </a>
                     <!-- project 4 -->
-                    <a href="https://davidaraujo.me/predict/">
+                    <!-- <a href="https://davidaraujo.me/predict/">
                         <div class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
@@ -84,7 +84,7 @@
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    </a> -->
                 </div>
             </div>
         </div>

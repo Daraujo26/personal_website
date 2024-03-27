@@ -42,7 +42,6 @@
                             <button id="form-button-reset" type="reset">Reset</button>
                         </div>
                     </div>
-
                 </form>
             </div>
         </div>
@@ -67,7 +66,7 @@ export default {
     },
     methods: {
         sendEmail() {
-            fetch('/contact/submit/', { // Django url endpoint
+            fetch('/api/contact/submit/', { // Django url endpoint
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
