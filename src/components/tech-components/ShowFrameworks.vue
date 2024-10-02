@@ -13,8 +13,8 @@
         <div id="react-native" class="bar"></div>
         <p id="frameworks-text">Vue and Angular: 1 Year</p>
         <div id="angular" class="bar"></div>
-        <p id="frameworks-text">Rocket: 0.5 Years</p>
-        <div id="rocket" class="bar"></div>
+        <p id="frameworks-text">Axum: 0.5 Years</p>
+        <div id="axum" class="bar"></div>
     </div>
 </template>
 
@@ -81,7 +81,7 @@
     width: 40%;
 }
 
-#rocket {
+#axum {
     background-color: cadetblue;
     width: 20%;
 }

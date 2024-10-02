@@ -17,7 +17,7 @@
                                     tailored
                                     to the needs of small to medium-sized service businesses.</strong> Utilizing React
                                 Native (Expo),
-                                Redux, Supabase (main backend), Spring Boot (Micro-services), Twilio SMS and Mailjet, and
+                                Redux, Supabase (main backend), Axum (Micro-services), Twilio SMS and Mailjet, and
                                 Postgres to build and manage the platform.
                                 <strong>Leading a small team of developers, collaborating with industry professionals,
                                     and
@@ -27,7 +27,7 @@
                                 competitive
                                 features.
                             </p>
-                            <p class="project-tech"><strong>Tech:</strong> React Native (Expo), Redux, Supabase, Spring Boot, PostgreSQL, Twilio SMS, Mailjet, Jira and Confluence</p>
+                            <p class="project-tech"><strong>Tech:</strong> React Native (Expo), Redux, Supabase, Axum, PostgreSQL, Twilio SMS, Mailjet, Jira and Confluence</p>
                         </div>
                     </a>
 
