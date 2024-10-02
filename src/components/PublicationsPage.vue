@@ -8,15 +8,13 @@
                         <h1 id="publications-header">Publications</h1>
                         <div id="publications-container">
                             <ul>
-                                <li class="publications-text">Cui, J., Araujo, D. A., Saha, S., & Kabir, M. F. (2023).
-                                    CS-Mixer:
-                                    A
-                                    cross-scale vision MLP model with spatial-channel mixing. arXiv preprint <a
-                                        href="https://arxiv.org/abs/2308.13363">arXiv:2308.13363.</a></li>
+                                <li class="publications-text">Cui, J., Araujo, D. A., Saha, S., & Kabir, M. F. (2024).
+                                    CS-Mixer: A Cross-Scale Vision Multi-Layer Perceptron with Spatial–Channel Mixing.
+                                    IEEE Transactions on Artificial Intelligence, 1(01), 1-13. <a href="https://www.computer.org/csdl/journal/ai/5555/01/10562192/1XSjzEhU5uo">Link</a></li>
                                 <li class="publications-text">Cui, J. & Araujo, D. A. (2024). Rethinking use-restricted
                                     open-source
                                     licenses for regulating abuse of generative models. Big Data & Society 11(1). <a
-                                        href="https://doi.org/10.1177/20539517241229699">https://doi.org/10.1177/20539517241229699</a>
+                                        href="https://doi.org/10.1177/20539517241229699">Link</a>
                                 </li>
                             </ul>
                         </div>

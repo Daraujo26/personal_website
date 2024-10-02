@@ -1,20 +1,20 @@
 <template>
     <div id="frameworks-div">
         <h4 id="languages-header">Frameworks</h4>
-        <p id="languages-text">Spring Boot: 2 Years</p>
+        <p id="languages-text">Spring Boot: 3 Years</p>
         <div id="spring-boot" class="bar"></div>
+        <p id="frameworks-text">React: 3 Years</p>
+        <div id="react" class="bar"></div>
         <p id="frameworks-text">Django: 2 Years</p>
         <div id="django" class="bar"></div>
-        <p id="frameworks-text">PostgreSQL: 1.5 Years</p>
+        <p id="frameworks-text">PostgreSQL: 2 Years</p>
         <div id="postgresql" class="bar"></div>
-        <p id="frameworks-text">Vue: 1 Years</p>
-        <div id="vue" class="bar"></div>
-        <p id="frameworks-text">React: 0.5 Years</p>
-        <div id="react" class="bar"></div>
-        <p id="frameworks-text">Angular: 0.5 Years</p>
+        <p id="frameworks-text">React Native: 1.5 Years</p>
+        <div id="react-native" class="bar"></div>
+        <p id="frameworks-text">Vue and Angular: 1 Year</p>
         <div id="angular" class="bar"></div>
-        <p id="frameworks-text">Flutter: 0.5 Years</p>
-        <div id="flutter" class="bar"></div>
+        <p id="frameworks-text">Rocket: 0.5 Years</p>
+        <div id="rocket" class="bar"></div>
     </div>
 </template>
 
@@ -58,7 +58,7 @@
 
 #django {
     background-color: yellow;
-    width: 100%;
+    width: 80%;
 }
 
 #postgresql {
@@ -66,23 +66,23 @@
     width: 80%;
 }
 
-#vue {
+#react-native {
     background-color: #0faf87;
-    width: 50%;
+    width: 60%;
 }
 
 #react {
     background-color: lightblue;
-    width: 25%;
+    width: 100%;
 }
 
 #angular {
     background-color: red;
-    width: 25%;
+    width: 40%;
 }
 
-#flutter {
+#rocket {
     background-color: cadetblue;
-    width: 25%;
+    width: 20%;
 }
 </style>

@@ -3,6 +3,7 @@
     <div id="side-bar" :class="{ 'v-if-active': isSidebarVisible }">
         <h1 id="side-bar-header" @click="showHome">David Araujo</h1>
         <router-link to="/about-me" class="side-bar-buttons">About Me</router-link>
+        <router-link to="/experience" class="side-bar-buttons">Experience</router-link>
         <router-link to="/projects" class="side-bar-buttons">Projects</router-link>
         <router-link to="/publications" class="side-bar-buttons">Publications</router-link>
         <router-link to="/contact" class="side-bar-buttons">Contact</router-link>

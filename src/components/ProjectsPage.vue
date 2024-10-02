@@ -4,87 +4,72 @@
         <div id="main-content">
             <div id="projects-div">
                 <h1 id="projects-header">Projects</h1>
-                <div id="project-card-container">
-                    <!-- project 1 -->
-                    <a href="https://flappy-bird-eced3.web.app/">
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img src="../assets/projects-vue-assets/flappy-bird.jpg" alt="Avatar"
-                                        style="width:250px;height:250px;">
-                                </div>
-                                <div class="flip-card-back" id="flip-card-back-1">
-                                    <h1 id="projects-title">Flappy Bird</h1>
-                                    <p id="projects-text">Flappy bird game for desktop. Implements a leaderboard system
-                                        that
-                                        displays the top three scores submitted by users.</p>
-                                    <p id="projects-text"><strong>Tech: JavaScript, VueJS, Firebase</strong></p>
-                                </div>
-                            </div>
+                <div id="project-list-container">
+                    <!-- Project 1 -->
+                    <a href="https://quoteahead.com/" class="project-card">
+                        <img src="../assets/projects-vue-assets/TaskMaster Final-07.png" alt="Flappy Bird"
+                            class="project-img">
+                        <div class="project-details">
+                            <h2 class="project-title">Quote Ahead</h2>
+                            <p class="project-description">Founder and Lead Developer of a mobile app startup designed
+                                to simplify quote generation, job scheduling, and invoicing for blue-collar contractors.
+                                <strong>Quote Ahead enhances operational efficiency by providing an all-in-one platform
+                                    tailored
+                                    to the needs of small to medium-sized service businesses.</strong> Utilizing React
+                                Native (Expo),
+                                Redux, Supabase (main backend), Spring Boot (Micro-services), Twilio SMS and Mailjet, and
+                                Postgres to build and manage the platform.
+                                <strong>Leading a small team of developers, collaborating with industry professionals,
+                                    and
+                                    exploring advanced integrations like Electric SQL for local caching.</strong>
+                                Currently in testing, with plans for
+                                launch, and anticipating significant traction due to strong industry interest and
+                                competitive
+                                features.
+                            </p>
+                            <p class="project-tech"><strong>Tech:</strong> React Native (Expo), Redux, Supabase, Spring Boot, PostgreSQL, Twilio SMS, Mailjet, Jira and Confluence</p>
                         </div>
                     </a>
-                    <!-- project 2 -->
-                    <a href="https://spring.davidaraujo.me/">
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img src="../assets/projects-vue-assets/pet-store.jpg" alt="Avatar"
-                                        style="width:250px;height:250px;">
-                                </div>
-                                <div class="flip-card-back" id="flip-card-back-2">
-                                    <h1 id="projects-title">Online Pet Store</h1>
-                                    <p id="projects-text">Project uses Java's Spring Boot framework implementing an
-                                        authetication
-                                        feature. When a user is unauthenticated they are able to
-                                        simply browse the different pet listings, however, once authenticated they can
-                                        use
-                                        the
-                                        Add,
-                                        Delete, and Edit pet features.</p>
-                                    <p id="projects-text"><strong>Tech: Java, Spring Boot, PostgreSQL</strong></p>
-                                </div>
-                            </div>
+
+                    <!-- Project 2 -->
+                    <a href="https://flappy-bird-eced3.web.app/" class="project-card">
+                        <img src="../assets/projects-vue-assets/flappy-bird.jpg" alt="Flappy Bird" class="project-img">
+                        <div class="project-details">
+                            <h2 class="project-title">Flappy Bird</h2>
+                            <p class="project-description">Web Flappy Bird game with all game logic embedded inside the
+                                Vue app! Implements a leaderboard system using Firebase that displays the top three
+                                scores submitted by users.</p>
+                            <p class="project-tech"><strong>Tech:</strong> JavaScript, VueJS, Firebase</p>
                         </div>
                     </a>
-                    <!-- project 3 -->
-                    <a href="https://davidaraujo.me/predict/">
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img src="../assets/projects-vue-assets/mnist-dataset.jpg" alt="Avatar"
-                                        style="width:250px;height:250px;">
-                                </div>
-                                <div class="flip-card-back" id="flip-card-back-3">
-                                    <h1 id="projects-title">Digit Recognition</h1>
-                                    <p id="projects-text">Site permits user to draw any number from 0-9, and utilizes a
-                                        model
-                                        which
-                                        was trained on the MNIST dataset to classify the image.</p>
-                                    <p id="projects-text"><strong>Tech: Django, Python, Machine Learning & AI</strong>
-                                    </p>
-                                </div>
-                            </div>
+
+                    <!-- Project 3 -->
+                    <a href="https://davidaraujo.me/predict/" class="project-card">
+                        <img src="../assets/projects-vue-assets/mnist-dataset.jpg" alt="Digit Recognition"
+                            class="project-img">
+                        <div class="project-details">
+                            <h2 class="project-title">Digit Recognition</h2>
+                            <p class="project-description">Users can draw any digit (0-9) and receive real-time
+                                classification. Developed and trained a PyTorch model, achieving over 99% accuracy on
+                                the test dataset, and integrated with a Django backend to process user input and deliver
+                                predictions.</p>
+                            <p class="project-tech"><strong>Tech:</strong> Django, Python, PyTorch, Machine Learning &
+                                AI</p>
                         </div>
                     </a>
-                    <!-- project 4 -->
-                    <!-- <a href="https://davidaraujo.me/predict/">
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img src="../assets/projects-vue-assets/anonymous-poll.jpg" alt="Avatar"
-                                        style="width:250px;height:250px;">
-                                </div>
-                                <div class="flip-card-back" id="flip-card-back-4">
-                                    <h1 id="projects-title">Anonymous Polling App</h1>
-                                    <p id="projects-text">An anonymous polling app that allows users to ask questions
-                                        and
-                                        recieve
-                                        answers. Implements add poll, remove poll, and search poll</p>
-                                    <p id="projects-text"><strong>Tech: Django, Python, PostgreSQL</strong></p>
-                                </div>
-                            </div>
+
+                    <!-- Project 4 -->
+                    <a href="https://spring.davidaraujo.me/" class="project-card">
+                        <img src="../assets/projects-vue-assets/pet-store.jpg" alt="Pet Store" class="project-img">
+                        <div class="project-details">
+                            <h2 class="project-title">Online Pet Store</h2>
+                            <p class="project-description">Project uses Java's Spring Boot framework implementing a demo
+                                authentication feature using Spring Security. Allows browsing and managing pet listings
+                                with CRUD operations.</p>
+                            <p class="project-tech"><strong>Tech:</strong> Java, Spring Boot, PostgreSQL</p>
                         </div>
-                    </a> -->
+                    </a>
+
                 </div>
             </div>
         </div>
@@ -100,6 +85,7 @@ export default {
 </script>
 
 <style>
+/* Default (desktop/tablet) styles */
 #projects-div {
     padding-top: 3rem;
     width: 90%;
@@ -108,242 +94,121 @@ export default {
     animation: fadeInUp 1s ease-out forwards;
 }
 
-#projects-title,
-#projects-text {
-    text-align: center;
-    width: 100%;
-    overflow-wrap: break-word;
-}
-
-
-#projects-text {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: 14px;
-    color: #717378;
-    page-break-after: auto;
-    padding-bottom: 5px;
-    margin: 0;
-}
-
-#projects-title {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: 16px;
-    font-weight: bold;
-    color: #717378;
-    margin-bottom: 3px;
-}
-
 #projects-header {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 28px;
     color: #0faf87;
-    margin: 1vh;
+    margin: 1vh 0;
+    text-align: left;
 }
 
-#project-card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-}
-
-/* card css */
-.flip-card {
-    background-color: transparent;
-    width: 250px;
-    height: 250px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px;
-    margin: 0 10px;
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: calc(33.333% - 20px);
-}
-
-.flip-card-inner,
-.flip-card-front,
-.flip-card-back {
-    position: relative;
-    width: 100%;
-}
-
-.flip-card img {
-    max-width: 100%;
-    height: auto;
-}
-
-.flip-card a {
-    text-decoration: none;
-}
-
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
-
-.flip-card-front,
-.flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.flip-card-front {
-    background-color: #bbb;
-    color: black;
-}
-
-.flip-card-back {
-    transform: rotateY(180deg);
-    background-color: #fff;
-    color: black;
+#project-list-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    gap: 20px;
+    max-height: 80vh;
+    overflow-y: auto;
     padding: 20px;
-    box-sizing: border-box;
-    overflow: hidden;
 }
 
-.flip-card-link {
+.project-card {
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-decoration: none;
     color: inherit;
-    display: block;
+    transition: transform 0.2s, box-shadow 0.2s;
+    align-items: center;
 }
 
-#flip-card-back-1 {
-    background-color: chartreuse;
+.project-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-#flip-card-back-2 {
-    background-color: aqua;
+.project-img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
-#flip-card-back-3 {
-    background-color: bisque;
+.project-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-#flip-card-back-4 {
-    background-color: fuchsia;
+.project-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
 }
 
-@media (max-width: 850px) {
+.project-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
 
-    #projects-div {
-        padding-top: 1rem;
+.project-tech {
+    font-size: 12px;
+    color: #888;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    #projects-header {
+        font-size: 24px;
+        text-align: center;
     }
 
-    .flip-card {
-        width: 100%;
-        margin-bottom: 40px;
-        display: block;
-        height: auto;
+    #project-list-container {
+        padding: 10px;
     }
 
-    .flip-card-inner {
-        display: block;
-        width: 250px;
-    }
-
-    .flip-card-front,
-    .flip-card-back {
-        position: relative;
-        width: 100%;
-        display: flex;
+    .project-card {
         flex-direction: column;
         align-items: center;
-        border-radius: 10px 10px 0 0;
-        border: solid 2px #000000;
-    }
-
-    .flip-card img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        margin: 0 auto;
-        display: block;
-        border-radius: 10px 10px 0 0;
-    }
-
-    .flip-card-back {
-        display: block;
         padding: 20px;
-        box-sizing: border-box;
-        transform: none !important;
-        background-color: #fff;
-        border-radius: 0 0 10px 10px;
-        border-top: none;
+        gap: 10px;
     }
 
-    .flip-card-front {
-        border-bottom: none;
+    .project-img {
+        width: 100%; 
+        max-width: 350px; 
+        border-radius: 10px;
+        margin-bottom: 15px; 
     }
 
-    #projects-title,
-    #projects-text {
+    .project-details {
+        align-items: center;
         text-align: center;
-        padding: 0 10px;
     }
 
-    .flip-card:hover .flip-card-inner,
-    .flip-card:focus .flip-card-inner,
-    .flip-card:active .flip-card-inner {
-        transform: none;
+    .project-title {
+        font-size: 18px;
+        margin-bottom: 5px;
     }
 
-    a {
-        text-decoration: none;
-        color: inherit;
+    .project-description {
+        font-size: 13px;
+        margin-bottom: 10px;
     }
 
-    #project-card-container {
-        overflow-y: auto;
-        max-height: 80vh;
-    }
-}
-
-@media (min-width: 850px) {
-    .flip-card-inner {
-        transition: transform 0.8s;
-        transform-style: preserve-3d;
-        border-radius: 10px;
+    .project-tech {
+        font-size: 12px;
     }
 
-    .flip-card img {
-        border-radius: 10px;
-    }
-
-    .flip-card-front {
-        border-radius: 10px;
-    }
-
-    .flip-card:hover .flip-card-inner {
-        transform: rotateY(180deg);
-    }
-
-    .flip-card-back {
-        transform: rotateY(180deg);
-        border-radius: 10px;
+    /* Add padding to bottom of container for better scrolling on mobile */
+    #project-list-container {
+        padding-bottom: 20px;
     }
 }
 </style>

@@ -1,6 +1,17 @@
 <template>
     <div id="courses-div">
         <h4 id="courses-header">Relevant Coursework</h4>
+        <p id="courses-text">CMPSC 465: Data Structures and Algorithms - Fall 2024</p>
+        <p id="courses-subtext">This course focuses on fundamental computer science concepts, including data structures,
+            algorithm analysis, recursion, trees, sets, and graph theory. Problem sets were primarily implemented in
+            <strong>Python</strong> and <strong>C</strong>, with an emphasis on understanding asymptotic notations like Big-O.
+        </p>
+        <p id="courses-text">CMPSC 311: Systems Programming - Fall 2024</p>
+        <p id="courses-subtext">This course covers Unix system programming in <strong>C</strong>, focusing on developing
+            software
+            components, understanding low-level system influences, and working with tools like compilers, debuggers, and
+            memory management. It provides hands-on experience with Unix, exploring system services, performance
+            optimization, and practical exposure to "real code" from Linux and GNU utilities.</p>
         <p id="courses-text">CMPSC 421: Netcentric Computing - Spring 2024</p>
         <p id="courses-subtext">Course delves into JavaScript and AJAX for crafting Rich Internet Applications, focusing
             on async programming with API calls.

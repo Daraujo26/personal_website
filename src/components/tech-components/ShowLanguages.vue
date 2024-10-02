@@ -7,14 +7,14 @@
         <div id="python" class="bar"></div>
         <p id="languages-text">HTML & CSS: 2.5 Years</p>
         <div id="HTML-CSS" class="bar"></div>
-        <p id="languages-text">Javascript: 2 Years</p>
+        <p id="languages-text">Javascript/Typescript: 2 Years</p>
         <div id="javascript" class="bar"></div>
         <p id="languages-text">SQL: 1.5 Years</p>
         <div id="SQL" class="bar"></div>
-        <p id="languages-text">Typescript: 0.5 Years</p>
+        <p id="languages-text">Rust: 1 Year</p>
         <div id="typescript" class="bar"></div>
-        <p id="languages-text">Dart: 0.5 Years</p>
-        <div id="dart" class="bar"></div>
+        <p id="languages-text">C: 1 Year</p>
+        <div id="C" class="bar"></div>
     </div>
 </template>
 
@@ -86,11 +86,11 @@
 
 #typescript {
     background-color: grey;
-    width: 20%;
+    width: 40%;
 }
 
-#dart {
+#C {
     background-color: turquoise;
-    width: 20%;
+    width: 40%;
 }
 </style>
