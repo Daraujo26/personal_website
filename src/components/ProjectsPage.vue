@@ -27,11 +27,30 @@
                                 competitive
                                 features.
                             </p>
-                            <p class="project-tech"><strong>Tech:</strong> React Native (Expo), Redux, Supabase, Axum, PostgreSQL, Twilio SMS, Mailjet, Jira and Confluence</p>
+                            <p class="project-tech"><strong>Tech:</strong> React Native (Expo), Redux, Supabase, Axum,
+                                PostgreSQL, Twilio SMS, Mailjet, Jira and Confluence</p>
                         </div>
                     </a>
 
                     <!-- Project 2 -->
+                    <a href="https://centering.vercel.app/" class="project-card">
+                        <div class="project-details-centering">
+                            <h2 class="project-title">Centering Theory Demo</h2>
+                            <ul>
+                                <li>Designed and implemented an MVP web demo based on centering theory, with plans to
+                                    expand it into a coherence kit for researchers in discourse modeling.</li>
+                                <li>Collaborated with Dr. Scott Weinstein and incorporated insights from Dr. Barbara
+                                    Grosz to refine the model’s application in computational linguistics and AI
+                                    discourse analysis.</li>
+                                <li>Developed an interactive framework to demonstrate entity coherence and anaphora
+                                    resolution; improved accessibility for researchers.</li>
+                            </ul>
+                            <p class="project-tech"><strong>Tech:</strong> React (Next JS), Flask, AllenNLP & SpanBERT
+                            </p>
+                        </div>
+                    </a>
+
+                    <!-- Project 3 -->
                     <a href="https://flappy-bird-eced3.web.app/" class="project-card">
                         <img src="../assets/projects-vue-assets/flappy-bird.jpg" alt="Flappy Bird" class="project-img">
                         <div class="project-details">
@@ -43,7 +62,7 @@
                         </div>
                     </a>
 
-                    <!-- Project 3 -->
+                    <!-- Project 4 -->
                     <a href="https://davidaraujo.me/predict/" class="project-card">
                         <img src="../assets/projects-vue-assets/mnist-dataset.jpg" alt="Digit Recognition"
                             class="project-img">
@@ -55,18 +74,6 @@
                                 predictions.</p>
                             <p class="project-tech"><strong>Tech:</strong> Django, Python, PyTorch, Machine Learning &
                                 AI</p>
-                        </div>
-                    </a>
-
-                    <!-- Project 4 -->
-                    <a href="https://spring.davidaraujo.me/" class="project-card">
-                        <img src="../assets/projects-vue-assets/pet-store.jpg" alt="Pet Store" class="project-img">
-                        <div class="project-details">
-                            <h2 class="project-title">Online Pet Store</h2>
-                            <p class="project-description">Project uses Java's Spring Boot framework implementing a demo
-                                authentication feature using Spring Security. Allows browsing and managing pet listings
-                                with CRUD operations.</p>
-                            <p class="project-tech"><strong>Tech:</strong> Java, Spring Boot, PostgreSQL</p>
                         </div>
                     </a>
 
@@ -144,6 +151,13 @@ export default {
     justify-content: center;
 }
 
+.project-details-centering {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
 .project-title {
     font-size: 20px;
     font-weight: bold;
@@ -181,10 +195,10 @@ export default {
     }
 
     .project-img {
-        width: 100%; 
-        max-width: 350px; 
+        width: 100%;
+        max-width: 350px;
         border-radius: 10px;
-        margin-bottom: 15px; 
+        margin-bottom: 15px;
     }
 
     .project-details {

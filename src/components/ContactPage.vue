@@ -15,10 +15,13 @@
             <div id="contact-form">
                 <form @submit.prevent="sendEmail">
                     <div id="form-div" class="card">
-                        <h2 id="form-h2">
-                            Contact
-                            <i class="plane-icon">&#9992;</i>
-                        </h2>
+                        <div
+                            style="display: flex; flex-direction: row; align-items: center; gap: 10px; margin-top: 10px; margin-bottom: 10px;">
+                            <h2 id="form-h2">
+                                Contact
+                            </h2>
+                            <img src="@/assets/send.svg" class="send-icon" style="height: 20px; width: 20px;" />
+                        </div>
                         <div class="inputs-row">
                             <div class="input">
                                 <input class="input__field" type="text" id="name" placeholder="Name"
@@ -190,6 +193,7 @@ export default {
 
 #form-h2 {
     font-weight: 900;
+    margin: 0;
 }
 
 mark {
@@ -389,6 +393,8 @@ mark {
     #form-div {
         margin: 0;
         width: auto;
+        padding: 10px;
+
     }
 
     #contact-text {
